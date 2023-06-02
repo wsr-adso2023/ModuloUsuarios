@@ -1,0 +1,271 @@
+:root {
+    --main-bg-color: rgb(237,237,237); /*BACKGROUND*/
+    --main-text-color: #fff; /*TEXTO COLOR*/
+    --main-cont-color: rgb(245, 245, 245); /*BACKGROUND CONTAINER*/
+    --main-bor-color: rgb(10,85,118); /*BORDE*/
+  }
+.container{
+    display: grid;
+    gap: 25%;
+}
+body{
+    background-color: var(--main-bg-color);
+    margin: 0;
+    font-family: Roboto;
+}
+/* INICIO LOGIN */
+.containerlogin{
+    display: flex;
+    justify-content: center;
+}
+.login{
+    display: grid;
+    text-align: center;
+    background-color: var(--main-cont-color);
+    border: solid var(--main-bor-color);
+    width: 400px;
+    margin-top: 6%;
+    border-radius: 1%;
+    
+}
+.textlogin{
+    background-color: var(--main-bor-color);
+    color: var(--main-text-color);
+    padding: 3%;
+}
+.formlogin{
+    padding: 5%;
+}
+#inputuser, #inputpass{
+    margin-bottom: 8%;
+    width: 100%;
+    height: 30px;
+}
+#btnlogin{
+    background-color: var(--main-bor-color);
+    border: solid var(--main-bor-color);
+    color: var(--main-text-color);
+    padding: 3%;
+    margin-bottom: 10%;
+}
+#helppass{
+    text-decoration: none;
+    color: var(--main-bor-color);
+}
+
+/* CONTENEDOR DE INFORMACION*/
+#containerinfo{
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    background-color: var(--main-bor-color);
+    padding: 1%;
+    color: var(--main-text-color);
+}
+#contact, #address{
+    display: grid;
+    gap: 7%;
+    text-align: center;
+}
+/* FIN LOGIN */
+
+bodypanel{
+    display: flex;
+    gap: 30px;
+}
+
+/* HEAD */
+.head{
+    background-color: var(--main-bor-color);
+    height: 25px;
+}
+/* HEAD */
+
+/* MENU  */
+.menu{
+    background-color: rgb(245,245,245);
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 285px;
+}
+.title{
+    display: flex;
+    background-color: var(--main-bor-color);
+    color: var(--main-text-color);
+    width: 285px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+}
+.imgavatar{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+}
+.rol{
+    display: flex;
+    color: var(--main-bor-color);
+    height: 30px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.modules{
+    display: grid;
+    justify-content: center;
+}
+#menu, ul, li{
+    margin: 0;
+    padding: 0;
+}
+#menu ul {
+        line-height: 25px;
+    }
+#menu li {
+    list-style: none;
+    position: relative;
+    background: var(--main-cont-color);
+}
+#menu li li {
+    list-style: none;
+    position: relative;
+    background: var(--main-cont-color);
+    left: 100%;
+    top: -27px;
+}
+#menu ul li a {
+    width: 285px;
+    height: 25px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+#menu ul ul {
+        position: absolute;
+        visibility: hidden;
+        top: 27px;
+    }
+#menu ul li:hover ul {
+        visibility: visible;
+    }
+#menu li:hover {
+        background-color: var(--main-bg-color);
+    }
+#menu ul li:hover ul li a:hover {
+        background-color: var(--main-bg-color);
+}
+/* MENU  */
+/* BOTON CERRAR SESION */
+.close{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.csbutton{
+    color: var(--main-text-color);
+    font-size: 14px;
+    background-color: var(--main-bor-color);
+    border: solid var(--main-bor-color);
+    width: 150px;
+    height: 38px;
+}
+/* BOTON CERRAR SESION */
+/* BUSCAR USUARIOS */
+.buscarusuario{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(245,245,245);
+}
+.search{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    background-color: var(--main-cont-color);
+    height: 20px;
+}
+#inputsearch{
+    width: 200px;
+}
+.table{
+    display: inline-block;
+    border-collapse: collapse;
+    background-color: var(--main-cont-color);
+    gap: 50px;
+    padding: 10px;
+}
+th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    .tablaUpdate{
+       display: inline-block;
+       margin-top: 20px;
+       border-collapse: collapse;
+       background-color: var(--main-cont-color);
+       gap: 50px;
+       padding: 10px;
+    }
+/* CREAR USUARIOS */
+.formuser, .usuario{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 4%;
+    background-color: var(--main-cont-color);
+}
+#nombres, #apellidos, #dni, #telefono,
+#direccion, #user, #pass, #selectdniuser{
+    padding: 5px;
+    margin: 10px;
+    width: 250px;
+}
+.selectdni{
+    display: flex;
+    justify-content: right;
+    gap: 5%;
+}
+
+.name{
+    display: flex;
+    justify-content: right;
+    gap: 5%;
+}
+.contacto, .telefono,
+.fechanacimiento{
+    display: grid;
+    justify-content: left;
+    gap: 5%;
+}
+.cargo{
+    margin-top: 25px;
+    display: flex;
+    gap: 2%;
+    justify-content: left;
+}
+.btnreg, .btnsave{
+    display: flex;
+    gap: 3%;
+    margin-top: 10%;
+    justify-content: center;
+}
+/* ASIGNAR USUARIO EN EL SISTEMA */
+/* ASIGNAR USUARIO EN EL SISTEMA */
+
+
+
+
+
+
+
+
+
+
+
+
+
